@@ -1,9 +1,6 @@
 import React from "react";
+import Layout from "../../components/Layout";
 
 export default function MyAccount() {
-  return (
-    <div>
-      <p>MyAccount</p>
-    </div>
-  );
+  return <Layout>MyAccount</Layout>;
 }

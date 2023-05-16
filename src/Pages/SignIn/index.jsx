@@ -1,9 +1,6 @@
 import React from "react";
+import Layout from "../../components/Layout";
 
 export default function SignIn() {
-  return (
-    <div>
-      <p>SignIn</p>
-    </div>
-  );
+  return <Layout>SignIn</Layout>;
 }
