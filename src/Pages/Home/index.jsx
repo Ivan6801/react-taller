@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import Layout from "../../components/Layout";
-import Card from "../../components/Card";
+import Layout from "../../Components/Layout";
+import Card from "../../Components/Card";
 
 export default function Home() {
   const [items, setItems] = useState(null);
