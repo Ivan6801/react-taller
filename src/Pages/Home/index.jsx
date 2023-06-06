@@ -1,15 +1,10 @@
-import { useState, useEffect } from "react";
 import Layout from "../../Components/Layout";
 import Card from "../../Components/Card";
+import ProductDetail from "../../Components/ProductDetail";
+import { useFetch } from "../../hooks/useFetch";
 
 export default function Home() {
-  const [items, setItems] = useState(null);
-
-  useEffect(() => {
-    fetch("https://api.escuelajs.co/api/v1/products")
-      .then((response) => response.json())
-      .then((data) => setItems(data));
-  }, []);
+  const { items } = useFetch();
 
   return (
     <Layout>
@@ -19,6 +14,7 @@ export default function Home() {
           <Card key={item.id} data={item} />
         ))}
       </div>
+      <ProductDetail />
     </Layout>
   );
 }
