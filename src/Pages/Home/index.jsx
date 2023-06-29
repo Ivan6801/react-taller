@@ -1,6 +1,6 @@
-import Layout from "../../Components/Layout";
-import Card from "../../Components/Card";
-import ProductDetail from "../../Components/ProductDetail";
+import Layout from "../../components/Layout";
+import Card from "../../components/Card";
+import ProductDetail from "../../components/ProductDetail";
 import { useFetch } from "../../hooks/useFetch";
 
 export default function Home() {
