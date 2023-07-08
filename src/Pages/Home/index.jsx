@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout>
       Home
-      <div className="grid gap-4 grid-cols-4 w-full max-w-screen-lg pt-2">
+      <div className="grid justify-items-center gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full max-w-screen-lg pt-2">
         {items?.map((item) => (
           <Card key={item.id} data={item} />
         ))}
